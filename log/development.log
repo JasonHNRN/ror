@@ -3368,3 +3368,937 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 98ms (Views: 89.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2018-10-25 14:45:13 +0800
+  [1m[35m (7.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/i320418/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (13.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/i320418/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 4668ms (Views: 4657.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2018-10-25 14:47:29 +0800
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController):
+  
+actionpack (5.2.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for ::1 at 2018-10-25 16:28:53 +0800
+  [1m[35m (2.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/i320418/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/i320418/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 404ms (Views: 394.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-10-25 22:58:53 +0800
+  [1m[35m (3.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/i320418/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 167ms (Views: 156.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2018-10-25 22:59:00 +0800
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController):
+  
+actionpack (5.2.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for ::1 at 2018-10-25 22:59:09 +0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 89ms (Views: 85.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-10-25 22:59:10 +0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 50ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-10-26 10:40:19 +0800
+  [1m[35m (7.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/i320418/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 134ms (Views: 124.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-10-26 10:40:19 +0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 78ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-10-26 10:40:27 +0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 56ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2018-10-26 10:40:30 +0800
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 91ms (Views: 87.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2018-10-26 10:40:31 +0800
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController):
+  
+actionpack (5.2.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2018-10-26 10:48:28 +0800
+  [1m[35m (2.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/i320418/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     7:                 <th>用户名</th>
+     8:                 <th></th>
+     9:             </tr>
+    10:             <% @users.each do |user| %>
+    11:               <tr>
+    12:                   <td><%= user.id %></td>
+    13:                   <td><%= user.username %></td>
+  
+app/views/users/index.html.erb:10:in `_app_views_users_index_html_erb___1083483745155530657_70281648630380'
+Started GET "/users" for ::1 at 2018-10-26 10:55:21 +0800
+  [1m[35m (3.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/i320418/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (51.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY id desc LIMIT 10 OFFSET 0[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/index.html.erb within layouts/application (117.0ms)
+Completed 500 Internal Server Error in 493ms (ActiveRecord: 97.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_sessions_path' for #<#<Class:0x00007fd7724e9408>:0x00007fd7777878e0>
+Did you mean?  new_session_path
+               new_session_url
+               new_user_path
+               sessions_path
+               edit_session_path):
+    38:                       <% if session[:user_id] %>
+    39:                        <li><%= link_to "#{User.find(session[:user_id]).username}, 退出",sessions_path(session[:user_id]), method: 'delete' %></li>
+    40:                           <% else %>
+    41:                       <li><%= link_to "登录", new_sessions_path %></li>
+    42:                           <% end %>
+    43:                   </ul>
+    44:            </div>
+  
+app/views/layouts/application.html.erb:41:in `_app_views_layouts_application_html_erb__858263219497725970_70281699533000'
+Started GET "/users" for ::1 at 2018-10-26 10:58:06 +0800
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY id desc LIMIT 10 OFFSET 0[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 80ms (Views: 73.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2018-10-26 10:58:12 +0800
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY id desc LIMIT 10 OFFSET 0[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 68ms (Views: 63.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2018-10-26 10:58:14 +0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 62ms (Views: 59.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2018-10-26 10:58:15 +0800
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY id desc LIMIT 10 OFFSET 0[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 54ms (Views: 49.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/sessions/new" for ::1 at 2018-10-26 10:58:16 +0800
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (313.4ms)
+Completed 500 Internal Server Error in 325ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_users_path' for #<#<Class:0x00007fd7720d0448>:0x00007fd771927340>
+Did you mean?  new_user_path):
+    11:         </div>
+    12: 
+    13:         <input type="submit" class="btn btn-primary" value="登录" />
+    14:         <%= link_to "注册", new_users_path %>
+    15:         <% end %>
+    16:     </div>
+    17:     <div class="col-sm-8">
+  
+app/views/sessions/new.html.erb:14:in `block in _app_views_sessions_new_html_erb___4507200507660864849_70281654077760'
+app/views/sessions/new.html.erb:4:in `_app_views_sessions_new_html_erb___4507200507660864849_70281654077760'
+Started GET "/users" for ::1 at 2018-10-26 10:58:17 +0800
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY id desc LIMIT 10 OFFSET 0[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 40ms (Views: 37.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-10-26 10:58:17 +0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 44ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2018-10-26 11:04:02 +0800
+  [1m[35m (1.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/i320418/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY id desc LIMIT 10 OFFSET 0[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 50ms (Views: 44.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/users" for ::1 at 2018-10-26 11:04:05 +0800
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY id desc LIMIT 10 OFFSET 0[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 42ms (Views: 38.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2018-10-26 11:25:11 +0800
+  [1m[35m (1.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/i320418/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY id desc LIMIT 10 OFFSET 0[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 60ms (Views: 55.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sessions/new" for ::1 at 2018-10-26 11:25:15 +0800
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (298.6ms)
+Completed 500 Internal Server Error in 308ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_users_path' for #<#<Class:0x00007fd7720d0448>:0x00007fd77a9402d8>
+Did you mean?  new_user_path):
+    11:         </div>
+    12: 
+    13:         <input type="submit" class="btn btn-primary" value="登录" />
+    14:         <%= link_to "注册", new_users_path %>
+    15:         <% end %>
+    16:     </div>
+    17:     <div class="col-sm-8">
+  
+app/views/sessions/new.html.erb:14:in `block in _app_views_sessions_new_html_erb___4507200507660864849_70281725609520'
+app/views/sessions/new.html.erb:4:in `_app_views_sessions_new_html_erb___4507200507660864849_70281725609520'
+Started GET "/sessions/new" for ::1 at 2018-10-26 11:25:41 +0800
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 42ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-10-26 11:25:44 +0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 47ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2018-10-26 11:25:45 +0800
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 57ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2018-10-26 11:25:46 +0800
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY id desc LIMIT 10 OFFSET 0[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 58ms (Views: 53.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2018-10-26 11:25:47 +0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 63ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2018-10-26 13:59:43 +0800
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/i320418/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 75ms (Views: 71.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-10-27 22:09:18 +0800
+  [1m[35m (4.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/i320418/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (10.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/i320418/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 331ms (Views: 319.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2018-10-27 22:09:20 +0800
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/i320418/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY id desc LIMIT 10 OFFSET 0[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 90ms (Views: 62.2ms | ActiveRecord: 22.3ms)
+
+
+Started GET "/sessions/new" for ::1 at 2018-10-27 22:09:22 +0800
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 45ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2018-10-27 22:09:24 +0800
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY id desc LIMIT 10 OFFSET 0[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 63ms (Views: 59.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2018-10-27 22:09:26 +0800
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY id desc LIMIT 10 OFFSET 0[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 57ms (Views: 53.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2018-10-27 22:09:27 +0800
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY id desc LIMIT 10 OFFSET 0[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 44ms (Views: 40.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2018-10-27 22:10:04 +0800
+  
+ActionController::RoutingError (undefined method `before_filter' for UsersController:Class
+Did you mean?  before_action):
+  
+app/controllers/users_controller.rb:3:in `<class:UsersController>'
+app/controllers/users_controller.rb:1:in `<main>'
+Started GET "/users" for ::1 at 2018-10-27 22:10:21 +0800
+  
+ActionController::RoutingError (undefined method `before_filter' for UsersController:Class
+Did you mean?  before_action):
+  
+app/controllers/users_controller.rb:3:in `<class:UsersController>'
+app/controllers/users_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2018-10-27 22:10:21 +0800
+Processing by WelcomeController#index as HTML
+Started GET "/sessions/new" for ::1 at 2018-10-27 22:10:21 +0800
+Started GET "/users" for ::1 at 2018-10-27 22:10:21 +0800
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  [1m[35m (2.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/i320418/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 39ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 37ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (undefined method `before_filter' for UsersController:Class
+Did you mean?  before_action):
+  
+app/controllers/users_controller.rb:3:in `<class:UsersController>'
+app/controllers/users_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2018-10-27 22:10:22 +0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 51ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2018-10-27 22:24:32 +0800
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/i320418/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+Redirected to http://localhost:4001/sessions/new
+Filter chain halted as :auth_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2018-10-27 22:24:32 +0800
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 43ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2018-10-27 22:24:36 +0800
+Processing by UsersController#index as HTML
+Redirected to http://localhost:4001/sessions/new
+Filter chain halted as :auth_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2018-10-27 22:24:36 +0800
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 35ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2018-10-27 22:26:19 +0800
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 41ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2018-10-27 22:26:21 +0800
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (224.9ms)
+Completed 500 Internal Server Error in 262ms (ActiveRecord: 10.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_sessions_path' for #<#<Class:0x00007fe8ab09bc58>:0x00007fe8ab09a1f0>
+Did you mean?  new_session_path
+               new_session_url
+               new_user_path
+               sessions_path
+               edit_session_path):
+    21: 
+    22:                         </div>
+    23:                         <%= f.submit "注册", class: "btn btn-primary" %>
+    24:                             <%= link_to "登录", new_sessions_path %>
+    25:                         <% end -%>
+    26:                         </div>
+    27:                         <div class="col-sm-7">
+  
+app/views/users/new.html.erb:24:in `block in _app_views_users_new_html_erb___4441521756388428379_70318574012000'
+app/views/users/new.html.erb:5:in `_app_views_users_new_html_erb___4441521756388428379_70318574012000'
+Started GET "/users/new" for ::1 at 2018-10-27 22:26:45 +0800
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 46ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2018-10-27 22:27:07 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oOcQw8+MjIdwY2jeJXHnLrO6j372fFF6TLcBNDlfothVyuZLd6p6dSc0V3BS156s9OIIo56j3tAq3czt7Ykpyw==", "user"=>{"username"=>"jason", "password"=>"[FILTERED]"}, "commit"=>"注册"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Exists (2.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'jason' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 67ms (Views: 45.3ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/users" for ::1 at 2018-10-27 22:27:20 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bVtXKYc47XOcPzEoFz6QoKbvnAJJjZvcTWB2sl27WUeYdqGhPx4bgctoDoZgmOki4bcb3yFSFHYrCrtriW3SVA==", "user"=>{"username"=>"jason1", "password"=>"[FILTERED]"}, "commit"=>"注册"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'jason1' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Create (10.9ms)[0m  [1m[32mINSERT INTO `users` (`username`, `password`, `created_at`, `updated_at`) VALUES ('jason1', '123456', '2018-10-27 14:27:20', '2018-10-27 14:27:20')[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (53.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:15
+Completed 500 Internal Server Error in 213ms (ActiveRecord: 64.3ms)
+
+
+  
+NameError (undefined local variable or method `_path' for #<UsersController:0x00007fe8a98d4250>):
+  
+app/controllers/users_controller.rb:17:in `create'
+Started GET "/users" for ::1 at 2018-10-27 22:27:52 +0800
+Processing by UsersController#index as HTML
+Redirected to http://localhost:4001/sessions/new
+Filter chain halted as :auth_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2018-10-27 22:27:52 +0800
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 34ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2018-10-27 22:27:54 +0800
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 49ms (Views: 30.4ms | ActiveRecord: 9.9ms)
+
+
+Started POST "/users" for ::1 at 2018-10-27 22:28:01 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x15RoHjLT93XzXuOAyHE71ius1c+lyp21q6qH0+aZBrgFIQlrRqiDT780AroJMnEdZJalMeotKE+sVr84m3GTA==", "user"=>{"username"=>"jason1", "password"=>"[FILTERED]"}, "commit"=>"注册"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'jason1' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 37ms (Views: 33.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for ::1 at 2018-10-27 22:28:08 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1YnqfZ8NcnN9QAU85GYfCpZK/EzKKHiW5GQtBaYpurkgpBz1JyuEgSoXOpKTwGaI0RJ7kaL39zyCDuDccv8xqg==", "user"=>{"username"=>"jason2", "password"=>"[FILTERED]"}, "commit"=>"注册"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`username` = BINARY 'jason2' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`username`, `password`, `created_at`, `updated_at`) VALUES ('jason2', '123456', '2018-10-27 14:28:08', '2018-10-27 14:28:08')[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (69.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:15
+Redirected to http://localhost:4001/sessions/new
+Completed 302 Found in 74ms (ActiveRecord: 70.3ms)
+
+
+Started GET "/sessions/new" for ::1 at 2018-10-27 22:28:09 +0800
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 34ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2018-10-27 22:28:17 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+m8kPSqK2rK6lkOJCO6FZ1VvmZJIDkDiqeR+hLPntIQPQtK1kqwsQO3BfCd/SPzlEjceTyDRz0jPjrNdZzE/lw==", "username"=>"jason2", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`username` = 'jason2' AND `users`.`password` = '123456' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:8
+Redirected to http://localhost:4001/
+Completed 302 Found in 11ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-10-27 22:28:17 +0800
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/welcome_controller.rb:4
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:39
+Completed 200 OK in 36ms (Views: 32.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2018-10-27 22:28:19 +0800
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY id desc LIMIT 10 OFFSET 0[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:39
+Completed 200 OK in 35ms (Views: 31.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for ::1 at 2018-10-27 22:32:14 +0800
+Started GET "/sessions/new" for ::1 at 2018-10-27 22:32:14 +0800
+Started GET "/" for ::1 at 2018-10-27 22:32:14 +0800
+Processing by UsersController#index as HTML
+Started GET "/sessions/new" for ::1 at 2018-10-27 22:32:14 +0800
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (6.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/i320418/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/i320418/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY id desc LIMIT 10 OFFSET 0[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/index.html.erb within layouts/application (8.5ms)
+Processing by WelcomeController#index as HTML
+Processing by SessionsController#new as HTML
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/i320418/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+Processing by SessionsController#new as HTML
+  ↳ app/controllers/welcome_controller.rb:4
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:39
+Completed 200 OK in 227ms (Views: 192.6ms | ActiveRecord: 3.8ms)
+
+
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:39
+  ↳ app/views/layouts/application.html.erb:39
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+Completed 200 OK in 278ms (Views: 262.1ms | ActiveRecord: 9.3ms)
+
+
+Completed 200 OK in 231ms (Views: 225.4ms | ActiveRecord: 1.7ms)
+
+
+  ↳ app/views/layouts/application.html.erb:39
+Completed 200 OK in 212ms (Views: 204.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users" for ::1 at 2018-10-28 20:41:43 +0800
+Started GET "/users" for ::1 at 2018-10-28 20:41:43 +0800
+  [1m[35m (3.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (4.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/i320418/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  ↳ /Users/i320418/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (9.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/i320418/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  [1m[35m (26.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Redirected to http://localhost:4001/sessions/new
+  ↳ /Users/i320418/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Filter chain halted as :auth_user rendered or redirected
+Processing by UsersController#index as HTML
+Completed 302 Found in 9ms (ActiveRecord: 0.0ms)
+
+
+Redirected to http://localhost:4001/sessions/new
+Filter chain halted as :auth_user rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2018-10-28 20:41:44 +0800
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 331ms (Views: 328.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2018-11-03 21:33:23 +0800
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/i320418/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/i320418/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 396ms (Views: 367.7ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/users/new" for ::1 at 2018-11-03 21:33:28 +0800
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/i320418/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 61ms (Views: 58.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2018-11-03 21:33:28 +0800
+Processing by UsersController#index as HTML
+Redirected to http://localhost:4001/sessions/new
+Filter chain halted as :auth_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2018-11-03 21:33:28 +0800
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 44ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-11-03 21:33:31 +0800
+Processing by WelcomeController#index as HTML
+Started GET "/users" for ::1 at 2018-11-03 21:33:31 +0800
+  [1m[35m (3.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/i320418/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Processing by UsersController#index as HTML
+Redirected to http://localhost:4001/sessions/new
+Filter chain halted as :auth_user rendered or redirected
+Completed 302 Found in 14ms (ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 59ms (Views: 55.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-11-03 21:33:31 +0800
+Processing by WelcomeController#index as HTML
+Started GET "/users" for ::1 at 2018-11-03 21:33:31 +0800
+Processing by UsersController#index as HTML
+Redirected to http://localhost:4001/sessions/new
+Filter chain halted as :auth_user rendered or redirected
+  Rendering welcome/index.html.erb within layouts/application
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 53ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2018-11-03 21:33:33 +0800
+Processing by UsersController#index as HTML
+Redirected to http://localhost:4001/sessions/new
+Filter chain halted as :auth_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2018-11-03 21:33:33 +0800
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 45ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2018-11-03 21:33:35 +0800
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 33ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2018-11-03 21:33:36 +0800
+Processing by UsersController#index as HTML
+Redirected to http://localhost:4001/sessions/new
+Filter chain halted as :auth_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2018-11-03 21:33:36 +0800
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 37ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-11-03 21:33:36 +0800
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 53ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2018-11-03 21:33:37 +0800
+Processing by UsersController#index as HTML
+Redirected to http://localhost:4001/sessions/new
+Filter chain halted as :auth_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2018-11-03 21:33:37 +0800
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 46ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+

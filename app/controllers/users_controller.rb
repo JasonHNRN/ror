@@ -1,8 +1,9 @@
 class UsersController < ApplicationController
 
-  # before_filter :auth_user, only: [:index]
+  before_action :auth_user, only: [:index]
+  
   def index
-   @user= User.page(params[:page] || 1).per_page(params[:per_page] || 10)
+   @users= User.page(params[:page] || 1).per_page(params[:per_page] || 10)
     .order("id desc")
   end
   def new
@@ -13,7 +14,7 @@ class UsersController < ApplicationController
     @user =  User.new(params.require(:user).permit(:username,:password))
     if @user.save
       flash[:notice] = "注册成功，请登录"
-      redirect_to new_sessions  _path
+      redirect_to new_session_path
     else
       render action: :new
     end
