@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  layout 'application'
+  #above code line "layout 'application'"  no need to add if using application.html.erb as default layout.but need to add it if not using 'application.html.erb'
 
   before_action :auth_user, only: [:index]
   
